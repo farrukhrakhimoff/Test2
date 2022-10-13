@@ -76,15 +76,20 @@ function detectMySeries(){
 }
 detectMySeries();
 
-function showDB(hidden){
-    if(!hidden){
+function showDB(){
+    if(!seriesDB.private){
         console.log(seriesDB);
     }
 }
-showDB(seriesDB.private);
+showDB();
 
-
-
+function writeGenres(){
+    for(let i =1; i <=3; i++){
+        const genre = prompt(`What's you favourite genre - ${i}`);
+        seriesDB.genres[i-1] = genre; // bo'sh massivga promptdan kiritilgan value larni qo'shish
+    }
+}
+writeGenres();
 
 
 
