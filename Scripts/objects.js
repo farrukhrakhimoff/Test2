@@ -57,14 +57,26 @@
         details: {
             hair: 'jet black',
             style: 'long',
-            color: 'black'
+            color: 'black',
+            price: {
+                curly: '$5',
+                straight: '$2',
+                flitty: '$8'
+            }
         },
     }
 
-    const {hair, style, color} = thief.details; //shu usul bilan object ichidagi objectning value larini olish mumkin boladi
 
-    console.log(hair);
+    const {style, color, price} = thief.details; //shu usul bilan object ichidagi objectning value larini olish mumkin boladi
     console.log(style);
     console.log(color);
+    console.log(price);
+// -----------------
+    const {curly, straight, flitty} = thief.details.price; //shu usul bilan object ichidagini ichidagi objectning value larini olish mumkin boladi
+    console.log(curly);
+    console.log(straight);
+    console.log(flitty);
+
+    
     
 
